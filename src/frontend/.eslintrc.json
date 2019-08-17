@@ -1,0 +1,81 @@
+{
+  "root": true,
+  "env": {
+      "es6": true,
+      "node": true
+  },
+  "extends": [
+      "eslint:recommended",
+      "plugin:vue/essential"
+  ],
+  "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+      "parser": "babel-eslint",
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+  },
+  "plugins": [
+      "vue",
+      "html"
+  ],
+  "rules": {
+      "indent": [
+          "error",
+          2
+      ],
+      "quotes": [
+          "error",
+          "single"
+      ],
+      "semi": [
+          "error",
+          "never"
+      ],
+      "eqeqeq": "error",
+      "no-tabs": "error",
+      "space-before-function-paren": ["error", "always"],
+      "no-undef": "error",
+      "no-empty": "error",
+      "no-use-before-define": ["error", "nofunc"],
+      "no-unused-vars": "error",
+      "comma-dangle": ["warn", "never"],
+      "no-constant-condition": "warn",
+      "no-dupe-args": "error",
+      "no-dupe-keys": "error",
+      "no-func-assign": "error",
+      "no-unexpected-multiline": "error",
+      "no-multi-spaces": "error",
+      "key-spacing": ["warn", {
+          "beforeColon": false,
+          "afterColon": true
+      }],
+      "block-scoped-var": "error",
+      "no-redeclare": ["error", {
+          "builtinGlobals": true
+      }],
+      "curly": "error",
+      "no-duplicate-imports": "error",
+      "no-console": "warn",
+      "complexity": "warn",
+      "no-eq-null": "warn",
+      "no-undef-init": "error",
+      "no-undefined": "error",
+      "func-call-spacing": "error",
+      "no-trailing-spaces": "warn",
+      "no-underscore-dangle": "error",
+      "no-unused-expressions": "error",
+      "space-infix-ops": "warn",
+      "space-unary-ops": "warn",
+      "no-const-assign": "error",
+      "comma-spacing": ["warn", {"before": false, "after": true}],
+      "keyword-spacing": ["error", { "overrides": {
+          "if": { "after": true },
+          "for": { "after": true },
+          "while": { "after": true }
+        } 
+      }]
+  }
+}
